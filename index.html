@@ -228,7 +228,9 @@
                         <h4>Interested in working together? We should schedule a time to chat. I'll bring the coffee :-></h4><br>
                         
                         <div class="contact-box">
-                            <form action="send_message.php" method="post">
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                            <!-- <form action="send_message.php" method="post"> -->
+                                <input type="hidden" name="access_key" value="8da23c78-2065-4171-9f8c-0d538e48132b">
                                 <input type="text" name="full_name" class="field" placeholder="Full Name" required>
                                 <!-- <input type="text" class="field" placeholder="Phone Number"> -->
                                 <input type="email" name="email" class="field" placeholder="Email Address" required>
