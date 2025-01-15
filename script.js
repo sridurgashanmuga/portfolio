@@ -26,17 +26,19 @@ pageTurnBtn.forEach((el, index) => {
 const pages = document.querySelectorAll('.book-page.page-right');
 const contactMeBtn = document.querySelector('.btn.contact-me');
 
-contactMeBtn.onclick = () => {
+contactMeBtn.onclick = (event) => {
+    event.preventDefault(); // Prevent the default action (e.g., form submission or page refresh)
+
     pages.forEach((page, index) => {
         setTimeout(() => {
             page.classList.add('turn');
 
             setTimeout(() => {
                 page.style.zIndex = 20 + index;
-            }, 500)
-        }, (index + 1) * 200 + 100)
-    }) 
-}
+            }, 500);
+        }, (index + 1) * 200 + 100);
+    });
+};
 
 //create reverse index function
 let totalPages = pages.length;
@@ -50,21 +52,27 @@ function reverseIndex() {
 }
 
 //back profile button when click
+
 const backProfileBtn = document.querySelector('.back-profile');
 
-backProfileBtn.onclick = () => {
+backProfileBtn.onclick = (event) => {
+    event.preventDefault(); // Prevent default action, if applicable.
+
     pages.forEach((_, index) => {
         setTimeout(() => {
-            reverseIndex();
-            pages[pageNumber].classList.remove('turn');
+            reverseIndex(); // Ensure reverseIndex logic is correctly defined.
+
+            pages[pages.length - 1 - index].classList.remove('turn'); // Reverse the turning order.
 
             setTimeout(() => {
                 reverseIndex();
-                pages[pageNumber].style.zIndex = 10 + index;
-            }, 500)
-        }, (index + 1) * 200 + 100)
-    })
-}
+
+                pages[pages.length - 1 - index].style.zIndex = 10 + index; // Reverse stacking order.
+            }, 500);
+        }, (index + 1) * 200 + 100);
+    });
+};
+
 
 //opening animation
 const coverRight = document.querySelector('.cover.cover-right');
