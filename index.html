@@ -6,12 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SriDurga-Portfolio</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css">
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+    <nav>
+        <div class="nav__content">
+          <div class="logo"><a href="#" class="nav__content">Durga</a></div>
+          <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+          </label>
+          <input type="checkbox" name="check" id="check" />
+          <ul>
+            <li><a href="#" class="nav__content">Home</a></li>
+            <!-- <li><a href="#" >About</a></li> -->
+            <li><a href="Document/Sri Durga S_CV.pdf" download="Sri Durga S_CV.pdf">Resume</a></li>
+            <!-- <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li> -->
+          </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="section__container">
+          <div class="content">
+            <p class="subtitle">HELLO</p>
+            <h1 class="title1">
+                Looking for<br> <span>a driven and innovative</span> tech enthusiast
+            </h1>
+            <p class="description">
+              Welcome to my portfolio! I'm Durga,
+              a passionate and curious tech enthusiast with a love 
+              for exploring innovative technologies and solving challenges.
+            </p>
+            <div class="action__btns">
+              <button class="hire__me">Hire Me</button>
+            </div>
+          </div>
+          <div class="image">
+            <img src="profile.jpg" alt="profile" />
+          </div>
+        </div>
+    </section>
+
+
     <!-- <div class="wrapper1"> -->
                 
         <div class="wrapper">
@@ -192,11 +236,7 @@
                      <div class="page-front">
                         <h1 class="title">But who I am?</h1> 
                         
-                        <div class="aboutme-box">
-                            <!-- <div class="img-box1">
-                                <img src="aboutme-removebg.png">
-                            </div> -->
-                            
+                        <div class="aboutme-box">                           
                             <div class="info-box1">
                                 <p>
                                     Computer Science graduate and experienced Guidewire Policy Center Developer at Deloitte, skilled in configuring and customizing Policy Center with strong foundation in Java, Gosu, and MySQL. 
@@ -218,28 +258,26 @@
                          
                         <span class="nextprev-btn" data-page="turn-3">
                             <i class='bx bx-chevron-right'></i>
-                        </span>
+                        </span> 
                     </div>
                     
                     <!-- page 6 contact me  -->
                      
-                    <div class="page-back">
+                    <div class="page-back"> 
                         <h1 class="title">Get In Touch</h1>
                         <h4>Interested in working together? We should schedule a time to chat. I'll bring the coffee :-></h4><br>
                         
                         <div class="contact-box">
                             <form action="https://api.web3forms.com/submit" method="POST">
-                            <!-- <form action="send_message.php" method="post"> -->
                                 <input type="hidden" name="access_key" value="8da23c78-2065-4171-9f8c-0d538e48132b">
                                 <input type="text" name="full_name" class="field" placeholder="Full Name" required>
-                                <!-- <input type="text" class="field" placeholder="Phone Number"> -->
                                 <input type="email" name="email" class="field" placeholder="Email Address" required>
-                                <textarea name="message" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
+                                <textarea name="message" id="" cols="40" rows="10" class="field" placeholder="Your Message" required></textarea>
                                 <input type="submit" class="btn" value="Send Message">
-                            </form>
-                        </div>
+                        </form>
+                        </div> 
                         
-                        <span class="number-page">6</span>
+                         <span class="number-page">6</span> 
                         
                         <!-- prev button-->
                          
@@ -250,7 +288,7 @@
                         <a href="#" class="back-profile">
                             <p>Profile</p>
                             <i class='bx bxs-user-circle'></i>
-                        </a>
+                        </a> 
                     </div>
                 </div>
             </div>
